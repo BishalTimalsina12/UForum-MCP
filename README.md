@@ -350,12 +350,6 @@ When asking AI assistants to search the forum:
 - Verify the project path in your MCP config
 - Ensure all NuGet packages are restored: `dotnet restore`
 
-### No results from search
-
-- Check your internet connection
-- Verify the Umbraco forum is accessible: https://forum.umbraco.com/
-- Try a different search query with more specific terms
-- Check if the forum API is responding: https://forum.umbraco.com/search.json?q=test
 
 ### AI assistant not finding the tool
 

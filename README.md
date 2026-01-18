@@ -16,21 +16,6 @@ This MCP server wraps the Umbraco forum API and provides intelligent search capa
 - **Post Drafting**: Generate well-formatted forum posts when solutions aren't found
 - **Comprehensive Coverage**: Access to all Umbraco forum features including categories, latest topics, and detailed discussions
 
-## Installation
-
-### NuGet Package
-
-The easiest way to install is via NuGet:
-
-```bash
-dotnet add package UForum-MCP
-```
-
-Or install via Package Manager Console:
-
-```
-Install-Package UForum-MCP
-```
 
 
 
@@ -49,12 +34,13 @@ Add this to your Cursor MCP settings (`.cursor/mcp.json` or Settings → MCP):
 
 ```json
 {
-  "mcpServers": {
-     "umbraco-forum": {
+  "servers": {
+    "UForum-MCP": {
       "type": "stdio",
-      "command": "UForum-MCP"
+      "command": "dnx",
+      "args": ["UForum-MCP@1.0.5", "--yes"]
+    }
   }
-  
 }
 ```
 
@@ -397,19 +383,7 @@ When asking AI assistants to search the forum:
 For issues, questions, or feature requests:
 contact me bishal@usome.com
 
-## Version History
 
-### Version 1.0.0
-
-- Initial release
-- Basic forum search functionality
-- Topic details with code extraction
-- Latest topics and categories
-- Smart search with version awareness
-- Multi-source search integration
-- Forum monitoring capabilities
-- Post drafting tools
-- Author information in all results
 
 ## Acknowledgments
 

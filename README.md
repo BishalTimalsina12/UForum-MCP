@@ -242,10 +242,6 @@ Optimizes your forum post title for better visibility and responses.
 2. **Stdio Transport**: Communicates with AI clients via standard input/output using JSON-RPC
 3. **Tool Discovery**: AI assistants automatically discover all available tools through MCP protocol
 4. **API Integration**: Calls Umbraco forum API endpoints:
-   - `https://forum.umbraco.com/search.json?q={query}` for searches
-   - `https://forum.umbraco.com/t/{topicId}.json` for topic details
-   - `https://forum.umbraco.com/latest.json` for latest topics
-   - `https://forum.umbraco.com/categories.json` for categories
 5. **Result Formatting**: Returns formatted results with rich metadata including author information, engagement metrics, and extracted code snippets
 6. **Intelligent Ranking**: Applies multi-factor ranking algorithm considering version match, tag relevance, recency, and engagement scores
 
@@ -350,12 +346,6 @@ When asking AI assistants to search the forum:
 - Verify the project path in your MCP config
 - Ensure all NuGet packages are restored: `dotnet restore`
 
-### No results from search
-
-- Check your internet connection
-- Verify the Umbraco forum is accessible: https://forum.umbraco.com/
-- Try a different search query with more specific terms
-- Check if the forum API is responding: https://forum.umbraco.com/search.json?q=test
 
 ### AI assistant not finding the tool
 

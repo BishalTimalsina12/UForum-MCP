@@ -1,0 +1,39 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "PackageId": "UForum-MCP",
+  "Title": "UForum-MCP - Umbraco Forum MCP Server",
+  "Description": "A Model Context Protocol (MCP) server that provides AI assistants (Cursor, VS Code, Claude) with comprehensive access to the Umbraco CMS Community Forum. Search, monitor, extract code, and interact with the Umbraco forum directly from your AI coding assistant. Enables intelligent search with version filtering, automatic code extraction from forum posts, multi-source search across forum/docs/GitHub, and forum post drafting capabilities.",
+  "Categories": "Artificial Intelligence",
+  "AlternateCategory": "Developer Tools",
+  "PackageType": "Package",
+  "Tags": [
+    "MCP",
+    "Model Context Protocol",
+    "AI Assistant",
+    "Artificial Intelligence",
+    "Forum Search",
+    "Code Extraction",
+    "Developer Tools",
+    "Cursor",
+    "VS Code",
+    "GitHub Copilot",
+    "Claude",
+    "ChatGPT",
+    "Umbraco Forum",
+    "Search",
+    "Intelligent Search"
+  ],
+  "LicenseTypes": ["Free"],
+  "AuthorDetails": {
+    "Name": "Bishal Tim",
+    "Description": "Developer creating AI-powered tools for the Umbraco community to enhance developer productivity and knowledge sharing.",
+    "Url": "https://github.com/BishalTimalsina12",
+    "ImageUrl": "https://github.com/BishalTimalsina12.png",
+    "SyncContributorsFromRepository": true
+  },
+  "DocumentationUrl": "https://github.com/BishalTimalsina12/UForum-MCP/blob/main/README.md",
+  "IssueTrackerUrl": "https://github.com/BishalTimalsina12/UForum-MCP/issues",
+  "DiscussionForumUrl": "https://forum.umbraco.com",
+  "VersionDependencyMode": "Default",
+  "Screenshots": []
+}

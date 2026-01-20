@@ -9,9 +9,9 @@
 
 		<!-- NuGet package metadata -->
 		<PackageId>UForum-MCP</PackageId>
-		<Version>1.0.6</Version>
+		<Version>1.0.7</Version>
 		<Authors>Bishal Tim</Authors>
-		<Description>A third-party MCP server for Umbraco forum search, code extraction, and AI-assisted post drafting.</Description>
+		<Description>A  MCP server for Umbraco forum search, code extraction, and AI-assisted post drafting.</Description>
 		<PackageProjectUrl>https://github.com/BishalTimalsina12/UForum-MCP</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/BishalTimalsina12/UForum-MCP</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>

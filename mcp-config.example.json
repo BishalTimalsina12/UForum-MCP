@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "UForum-MCP": {
+      "type": "stdio",
+      "command": "UForum-MCP"
+    }
+  }
+}

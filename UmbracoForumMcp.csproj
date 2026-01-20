@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+
+		<!-- NuGet package metadata -->
+		<PackageId>UForum-MCP</PackageId>
+		<Version>1.0.6</Version>
+		<Authors>Bishal Tim</Authors>
+		<Description>A third-party MCP server for Umbraco forum search, code extraction, and AI-assisted post drafting.</Description>
+		<PackageProjectUrl>https://github.com/BishalTimalsina12/UForum-MCP</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/BishalTimalsina12/UForum-MCP</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>umbraco;forum;mcp;model-context-protocol;ai;assistant;search;umbraco-marketplace;csharp;dotnet</PackageTags>
+		
+		<!-- Enable as .NET tool -->
+		<PackAsTool>true</PackAsTool>
+		<ToolCommandName>UForum-MCP</ToolCommandName>
+		<PackageIcon>UForum-MCP.png</PackageIcon>
+		<PackageType>McpServer</PackageType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ModelContextProtocol" Version="0.6.0-preview.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="10.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="UForum-MCP.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <None Include=".mcp\server.json">
+	    <Pack>True</Pack>
+	    <PackagePath>.mcp\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>

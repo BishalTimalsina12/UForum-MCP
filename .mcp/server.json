@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "description": "A Model Context Protocol server that provides AI assistants with comprehensive access to the Umbraco CMS Community Forum. Enables searching, monitoring, code extraction, and forum post drafting.",
+  "name": "io.github.BishalTimalsina12/UForum-MCP",
+  "version": "1.0.6",
+  "packages": [
+    {
+      "registryType": "nuget",
+      "registryBaseUrl": "https://api.nuget.org",
+      "identifier": "UForum-MCP",
+      "version": "1.0.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [],
+      "environmentVariables": []
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/BishalTimalsina12/UForum-MCP",
+    "source": "github"
+  }
+}

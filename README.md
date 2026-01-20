@@ -16,6 +16,23 @@ This MCP server wraps the Umbraco forum API and provides intelligent search capa
 - **Post Drafting**: Generate well-formatted forum posts when solutions aren't found
 - **Comprehensive Coverage**: Access to all Umbraco forum features including categories, latest topics, and detailed discussions
 
+## Installation
+
+### Install as a .NET Tool
+
+This is a .NET tool package, not a regular NuGet package. Install it as a global tool:
+
+```bash
+dotnet tool install --global UForum-MCP
+```
+
+Or install it locally for a specific project:
+
+```bash
+dotnet tool install UForum-MCP
+```
+
+**Note:** This package cannot be installed using `dotnet add package` because it's a tool, not a library package.
 
 
 
@@ -30,6 +47,16 @@ This MCP server wraps the Umbraco forum API and provides intelligent search capa
 
 ### For Cursor
 
+**Step 1: Install the tool first**
+
+Install UForum-MCP as a global tool:
+
+```bash
+dotnet tool install --global UForum-MCP
+```
+
+**Step 2: Configure in Cursor**
+
 Add this to your Cursor MCP settings (`.cursor/mcp.json` or Settings → MCP):
 
 ```json
@@ -37,12 +64,15 @@ Add this to your Cursor MCP settings (`.cursor/mcp.json` or Settings → MCP):
   "servers": {
     "UForum-MCP": {
       "type": "stdio",
-      "command": "dnx",
-      "args": ["UForum-MCP@1.0.5", "--yes"]
+      "command": "UForum-MCP"
     }
   }
 }
 ```
+
+**Alternative: Using dnx (if you prefer automatic installation)**
+
+If you want to use the `dnx` command for automatic installation, ensure all platform-specific packages are published to NuGet. The configuration from NuGet.org's "MCP Server" tab should work once all packages are available.
 
 
 
@@ -76,7 +106,7 @@ Intelligent search that ranks results based on Umbraco version and context. This
 
 **Parameters:**
 - `query` (string, required): The search query
-- `umbracoVersion` (string, optional): Your Umbraco version (e.g., "v13", "v14")
+- `umbracoVersion` (string, optional): Your Umbraco version (e.g., "v13", "v14", "v17")
 - `priorityTags` (string, optional): Comma-separated tags to prioritize (e.g., "API,Routing,Controllers")
 
 **Returns:**
@@ -242,6 +272,10 @@ Optimizes your forum post title for better visibility and responses.
 2. **Stdio Transport**: Communicates with AI clients via standard input/output using JSON-RPC
 3. **Tool Discovery**: AI assistants automatically discover all available tools through MCP protocol
 4. **API Integration**: Calls Umbraco forum API endpoints:
+   - `https://forum.umbraco.com/search.json?q={query}` for searches
+   - `https://forum.umbraco.com/t/{topicId}.json` for topic details
+   - `https://forum.umbraco.com/latest.json` for latest topics
+   - `https://forum.umbraco.com/categories.json` for categories
 5. **Result Formatting**: Returns formatted results with rich metadata including author information, engagement metrics, and extracted code snippets
 6. **Intelligent Ranking**: Applies multi-factor ranking algorithm considering version match, tag relevance, recency, and engagement scores
 
@@ -267,7 +301,7 @@ Results are ranked using a multi-factor algorithm:
 - **Recency**: Up to +30 points based on how recent the post is
 - **Engagement**: Variable points based on views, likes, and replies
 
-The system automatically detects Umbraco versions (v8 through v14) in topic titles and content.
+The system automatically detects Umbraco versions (v8 through v17) in topic titles and content.
 
 ## Example Interactions
 
@@ -346,6 +380,12 @@ When asking AI assistants to search the forum:
 - Verify the project path in your MCP config
 - Ensure all NuGet packages are restored: `dotnet restore`
 
+### No results from search
+
+- Check your internet connection
+- Verify the Umbraco forum is accessible: https://forum.umbraco.com/
+- Try a different search query with more specific terms
+- Check if the forum API is responding: https://forum.umbraco.com/search.json?q=test
 
 ### AI assistant not finding the tool
 
@@ -373,7 +413,19 @@ When asking AI assistants to search the forum:
 For issues, questions, or feature requests:
 contact me bishal@usome.com
 
+## Version History
 
+### Version 1.0.0
+
+- Initial release
+- Basic forum search functionality
+- Topic details with code extraction
+- Latest topics and categories
+- Smart search with version awareness
+- Multi-source search integration
+- Forum monitoring capabilities
+- Post drafting tools
+- Author information in all results
 
 ## Acknowledgments
 

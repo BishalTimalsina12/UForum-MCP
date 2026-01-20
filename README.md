@@ -30,15 +30,9 @@ This MCP server wraps the Umbraco forum API and provides intelligent search capa
 
 ### For Cursor
 
-**Step 1: Install the tool first**
 
-Install UForum-MCP as a global tool:
 
-```bash
-dotnet tool install --global UForum-MCP
-```
-
-**Step 2: Configure in Cursor**
+**Configure in Cursor**
 
 Add this to your Cursor MCP settings (`.cursor/mcp.json` or Settings → MCP):
 

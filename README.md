@@ -18,23 +18,6 @@ This MCP server wraps the Umbraco forum API and provides intelligent search capa
 
 ## Installation
 
-### Install as a .NET Tool
-
-This is a .NET tool package, not a regular NuGet package. Install it as a global tool:
-
-```bash
-dotnet tool install --global UForum-MCP
-```
-
-Or install it locally for a specific project:
-
-```bash
-dotnet tool install UForum-MCP
-```
-
-**Note:** This package cannot be installed using `dotnet add package` because it's a tool, not a library package.
-
-
 
 ## Prerequisites
 
@@ -47,15 +30,9 @@ dotnet tool install UForum-MCP
 
 ### For Cursor
 
-**Step 1: Install the tool first**
 
-Install UForum-MCP as a global tool:
 
-```bash
-dotnet tool install --global UForum-MCP
-```
-
-**Step 2: Configure in Cursor**
+**Configure in Cursor**
 
 Add this to your Cursor MCP settings (`.cursor/mcp.json` or Settings → MCP):
 
@@ -413,19 +390,6 @@ When asking AI assistants to search the forum:
 For issues, questions, or feature requests:
 contact me bishal@usome.com
 
-## Version History
-
-### Version 1.0.0
-
-- Initial release
-- Basic forum search functionality
-- Topic details with code extraction
-- Latest topics and categories
-- Smart search with version awareness
-- Multi-source search integration
-- Forum monitoring capabilities
-- Post drafting tools
-- Author information in all results
 
 ## Acknowledgments
 

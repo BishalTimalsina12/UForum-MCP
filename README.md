@@ -390,19 +390,6 @@ When asking AI assistants to search the forum:
 For issues, questions, or feature requests:
 contact me bishal@usome.com
 
-## Version History
-
-### Version 1.0.0
-
-- Initial release
-- Basic forum search functionality
-- Topic details with code extraction
-- Latest topics and categories
-- Smart search with version awareness
-- Multi-source search integration
-- Forum monitoring capabilities
-- Post drafting tools
-- Author information in all results
 
 ## Acknowledgments
 

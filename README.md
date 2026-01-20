@@ -18,23 +18,6 @@ This MCP server wraps the Umbraco forum API and provides intelligent search capa
 
 ## Installation
 
-### Install as a .NET Tool
-
-This is a .NET tool package, not a regular NuGet package. Install it as a global tool:
-
-```bash
-dotnet tool install --global UForum-MCP
-```
-
-Or install it locally for a specific project:
-
-```bash
-dotnet tool install UForum-MCP
-```
-
-**Note:** This package cannot be installed using `dotnet add package` because it's a tool, not a library package.
-
-
 
 ## Prerequisites
 

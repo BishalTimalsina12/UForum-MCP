@@ -2,8 +2,9 @@
   "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
   "Title": "UForum-MCP - Umbraco Forum MCP Server",
   "Description": "A Model Context Protocol (MCP) server that provides AI assistants (Cursor, VS Code, Claude) with comprehensive access to the Umbraco CMS Community Forum. Search, monitor, extract code, and interact with the Umbraco forum directly from your AI coding assistant. Enables intelligent search with version filtering, automatic code extraction from forum posts, multi-source search across forum/docs/GitHub, and forum post drafting capabilities.",
+  "Category": "Developer Tools",
   "AlternateCategory": "Developer Tools",
-  "PackageType": "Package",
+  "PackageType": "Tool",
   "Tags": [
     "MCP",
     "Model Context Protocol",
@@ -31,7 +32,6 @@
   },
   "DocumentationUrl": "https://github.com/BishalTimalsina12/UForum-MCP/blob/main/README.md",
   "IssueTrackerUrl": "https://github.com/BishalTimalsina12/UForum-MCP/issues",
-  "DiscussionForumUrl": "https://forum.umbraco.com",
   "VersionDependencyMode": "Default",
   "Screenshots": []
 }
